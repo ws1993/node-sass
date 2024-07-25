@@ -26,7 +26,7 @@ jobs:
     if: github.repository_owner == 'sass'
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Install packages
         run: npm install --unsafe-perm
@@ -35,6 +35,6 @@ jobs:
         run: npm run coverage
 
       - name: Coveralls GitHub Action
-        uses: coverallsapp/github-action@1.1.3
+        uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

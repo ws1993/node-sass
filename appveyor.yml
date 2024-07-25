@@ -33,15 +33,19 @@
   environment:
     SKIP_SASS_BINARY_DOWNLOAD_FOR_CI: true
     matrix:
-      - nodejs_version: 14
-        GYP_MSVS_VERSION: 2017
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
       - nodejs_version: 16
         GYP_MSVS_VERSION: 2019
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
-      - nodejs_version: 17
+      - nodejs_version: 18
         GYP_MSVS_VERSION: 2019
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+      - nodejs_version: 19
+        GYP_MSVS_VERSION: 2019
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+      - nodejs_version: 20
+        GYP_MSVS_VERSION: 2019
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
+
 
   install:
     # https://www.appveyor.com/docs/lang/nodejs-iojs/#installing-any-version-of-nodejs-or-iojs

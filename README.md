@@ -1,10 +1,10 @@
 # node-sass
 
-**Warning:** [LibSass and Node Sass are deprecated](https://sass-lang.com/blog/libsass-is-deprecated).
-While they will continue to receive maintenance releases indefinitely, there are no
-plans to add additional features or compatibility with any new CSS or Sass features.
-Projects that still use it should move onto
+**Warning:** [Node Sass has reached end of life]. It will receive no more
+releases, even for security fixes. Projects that still use it should move onto
 [Dart Sass](https://sass-lang.com/dart-sass).
+
+[Node Sass has reached end of life]: https://sass-lang.com/blog/node-sass-is-end-of-life
 
 ## Node version support policy
 
@@ -17,10 +17,13 @@ Below is a quick guide for minimum and maximum supported versions of node-sass:
 
 NodeJS  | Supported node-sass version | Node Module
 --------|-----------------------------|------------
-Node 17 | 7.0+                        | 102
+Node 20 | 9.0+                        | 115
+Node 19 | 8.0+                        | 111
+Node 18 | 8.0+                        | 108
+Node 17 | 7.0+, <8.0                  | 102
 Node 16 | 6.0+                        | 93
 Node 15 | 5.0+, <7.0                  | 88
-Node 14 | 4.14+                       | 83
+Node 14 | 4.14+, <9.0                 | 83
 Node 13 | 4.13+, <5.0                 | 79
 Node 12 | 4.12+, <8.0                 | 72
 Node 11 | 4.10+, <5.0                 | 67
